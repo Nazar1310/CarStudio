@@ -7,10 +7,10 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="{{route('index')}}" class="nav-item nav-link active">Головна</a>
-            <a href="{{route('about')}}" class="nav-item nav-link">Про нас</a>
-            <a href="{{route('services')}}" class="nav-item nav-link">Послуги</a>
-            <a href="{{route('contact')}}" class="nav-item nav-link">Контакти</a>
+            <a href="{{route('index')}}" class="nav-item nav-link {{Route::current()->getName() == 'index'?'active':''}}">Головна</a>
+            <a href="{{route('about')}}" class="nav-item nav-link {{Route::current()->getName() == 'about'?'active':''}}">Про нас</a>
+            <a href="{{route('services')}}" class="nav-item nav-link {{Route::current()->getName() == 'services'?'active':''}}">Послуги</a>
+            <a href="{{route('contact')}}" class="nav-item nav-link {{Route::current()->getName() == 'contact'?'active':''}}">Контакти</a>
         </div>
         <a href="{{route('advice')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Консультація<i class="fa fa-arrow-right ms-3"></i></a>
     </div>

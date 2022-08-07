@@ -2,11 +2,11 @@
     <div class="container">
         <div class="text-center">
             <h6 class="text-primary text-uppercase">// Відгуки //</h6>
-            <h1 class="mb-5">Наші клієнти кажуть!</h1>
+            <h2 class="mb-5">Наші клієнти кажуть!</h2>
         </div>
         <div class="owl-carousel testimonial-carousel position-relative">
             <div class="testimonial-item text-center">
-                <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="/img/testimonial-1.jpg" style="width: 80px; height: 80px;">
                 <h5 class="mb-0">Client Name</h5>
                 <p>Profession</p>
                 <div class="testimonial-text bg-light text-center p-4">
@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="/img/testimonial-2.jpg" style="width: 80px; height: 80px;">
                 <h5 class="mb-0">Client Name</h5>
                 <p>Profession</p>
                 <div class="testimonial-text bg-light text-center p-4">
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="/img/testimonial-3.jpg" style="width: 80px; height: 80px;">
                 <h5 class="mb-0">Client Name</h5>
                 <p>Profession</p>
                 <div class="testimonial-text bg-light text-center p-4">
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="/img/testimonial-4.jpg" style="width: 80px; height: 80px;">
                 <h5 class="mb-0">Client Name</h5>
                 <p>Profession</p>
                 <div class="testimonial-text bg-light text-center p-4">

@@ -3,7 +3,7 @@
         <div class="row gx-5">
             <div class="col-lg-6 py-5">
                 <div class="py-5">
-                    <h1 class="text-white mb-4">Професійна консультація він наших найкращих спеціалістів</h1>
+                    <h2 class="text-white mb-4">Професійна консультація він наших найкращих спеціалістів</h2>
                     <p class="text-white mb-0">Завніть дану форму та відправти заявку, впродовж декількох годин нас спеціаліст зв'яжеться з вами</p>
                 </div>
             </div>
@@ -20,9 +20,9 @@
                             <div class="col-12">
                                 <select class="form-select border-0" style="height: 55px;">
                                     <option selected>Виберіть послугу</option>
-                                    <option value="1">Service 1</option>
-                                    <option value="2">Service 2</option>
-                                    <option value="3">Service 3</option>
+                                    @foreach($services as $key=>$service)
+                                        <option value="{{$key}}">{{$service->name}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                             <div class="col-12">

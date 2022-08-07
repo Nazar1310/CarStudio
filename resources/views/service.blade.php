@@ -32,28 +32,28 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                            <img class="img-fluid" src="/img/service-1.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                            <img class="img-fluid" src="/img/service-2.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                            <img class="img-fluid" src="/img/service-3.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/service-4.jpg" alt="">
+                            <img class="img-fluid" src="/img/service-4.jpg" alt="">
                         </div>
                     </div>
                 </div>

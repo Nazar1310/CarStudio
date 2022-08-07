@@ -4,7 +4,7 @@
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Адреса</h4>
                 <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>вул.Кропивницького,1А</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+380980492906</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+380981234567</p>
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i>carstudion@gmail.com</p>
                 <div class="d-flex pt-2">
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>

@@ -6,28 +6,28 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-primary text-uppercase">// Contact Us //</h6>
-                <h1 class="mb-5">Contact For Any Query</h1>
+                <h6 class="text-primary text-uppercase">// Контакти //</h6>
+                <h2 class="mb-5">Звертайтеся з будь-якими запитаннями</h2>
             </div>
             <div class="row g-4">
                 <div class="col-12">
                     <div class="row gy-4">
                         <div class="col-md-4">
                             <div class="bg-light d-flex flex-column justify-content-center p-4">
-                                <h5 class="text-uppercase">// Booking //</h5>
-                                <p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i>book@example.com</p>
+                                <h5 class="text-uppercase">// Адреса //</h5>
+                                <p class="m-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>вул.Кропивницького,1А</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="bg-light d-flex flex-column justify-content-center p-4">
-                                <h5 class="text-uppercase">// General //</h5>
-                                <p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>
+                                <h5 class="text-uppercase">// Телефон //</h5>
+                                <p class="m-0"><i class="fa fa-phone-alt text-primary me-2"></i>+380981234567</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="bg-light d-flex flex-column justify-content-center p-4">
-                                <h5 class="text-uppercase">// Technical //</h5>
-                                <p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
+                                <h5 class="text-uppercase">// Email //</h5>
+                                <p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i>carstudion@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -40,35 +40,35 @@
                 </div>
                 <div class="col-md-6">
                     <div class="wow fadeInUp" data-wow-delay="0.2s">
-                        <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                        <p>Ви можете залишити своє повідомлення тут</p>
                         <form>
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Ваше Ім'я">
+                                        <label for="name">Ваше Ім'я</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Ваш Email">
+                                        <label for="email">Ваш Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
+                                        <input type="text" class="form-control" id="subject" placeholder="Тема">
+                                        <label for="subject">Тема</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Message</label>
+                                        <textarea class="form-control" placeholder="Залиште повідомлення тут" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Повідомлення</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Відправити Повідомлення</button>
                                 </div>
                             </div>
                         </form>
