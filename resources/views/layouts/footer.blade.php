@@ -3,14 +3,13 @@
         <div class="row g-5">
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Адреса</h4>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>вул.Кропивницького,1А</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+380981234567</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>carstudion@gmail.com</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>{{$address}}</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>{{$phone}}</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>{{$email}}</p>
                 <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -29,10 +28,11 @@
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Newsletter</h4>
                 <p>Будьте першими, хто дізнається про новинки, переваги та акції.</p>
-                <div class="position-relative mx-auto" style="max-width: 400px;">
-                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Ваш email">
-                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                </div>
+                <form method="POST" action="{{route('newsletter')}}" class="position-relative mx-auto" style="max-width: 400px;">
+                    @csrf
+                    <input type="email" name="email" class="form-control border-0 w-100 py-3 ps-4 pe-5" placeholder="Ваш email" required>
+                    <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"><i class="fa fa-arrow-right ms-3"></i></button>
+                </form>
             </div>
         </div>
     </div>

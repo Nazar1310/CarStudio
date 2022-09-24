@@ -1,6 +1,6 @@
 @extends('layouts.main')
-@section('title', 'Головна')
-@section('meta_description', '')
+@section('title', 'Найкраща детейлінг студія в Івано-Франківську. Професійний догляд за вашим авто - CarStudio')
+@section('meta_description', $seoDescription)
 @section('content')
     <div class="container-fluid p-0 mb-5">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -40,7 +40,7 @@
                         <i class="fa fa-certificate fa-3x text-primary flex-shrink-0"></i>
                         <div class="ps-4">
                             <h5 class="mb-3">Якісне обслуговування</h5>
-                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                            <p>Ми цінуємо кожного нашого клієнта, та робимо все, щоб клієнт залишився задоволений від наших послуг та часу перебування в сервісі.</p>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                         <i class="fa fa-users-cog fa-3x text-primary flex-shrink-0"></i>
                         <div class="ps-4">
                             <h5 class="mb-3">Досвідчені працівники</h5>
-                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                            <p>У нас в команді працюють перевірені працівники, з достатнім досвідом за плечима, роботи яких ви можете переглянути у нас на сайті.</p>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                         <i class="fa fa-tools fa-3x text-primary flex-shrink-0"></i>
                         <div class="ps-4">
                             <h5 class="mb-3">Сучасне обладнання</h5>
-                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                            <p>В роботі ми використовуємо найкраще та найсучасніше обладнання, щоб отримувати високі результати надання наших послуг.</p>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
         </div>
     </div>
     @include('layouts.service-list')
-    @include('layouts.advice-form')
-    @include('layouts.team')
+    @include('layouts.advice-form',['bg'=>true])
     @include('layouts.reviews')
+    @include('layouts.phone-number')
 @stop

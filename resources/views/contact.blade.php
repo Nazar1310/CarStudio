@@ -1,6 +1,6 @@
 @extends('layouts.main')
-@section('title', 'Контакти')
-@section('meta_description', '')
+@section('title', 'Контакти детейлінг студії в Івано-Франківську: e-mail, телефон, адреса - CarStudio')
+@section('meta_description', $seoDescription)
 @section('content')
     @include('layouts.page-header',['title'=>'Наші Контакти','name'=>'Контакти'])
     <div class="container-xxl py-5">
@@ -15,19 +15,19 @@
                         <div class="col-md-4">
                             <div class="bg-light d-flex flex-column justify-content-center p-4">
                                 <h5 class="text-uppercase">// Адреса //</h5>
-                                <p class="m-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>вул.Кропивницького,1А</p>
+                                <p class="m-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>{{$address}}</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="bg-light d-flex flex-column justify-content-center p-4">
                                 <h5 class="text-uppercase">// Телефон //</h5>
-                                <p class="m-0"><i class="fa fa-phone-alt text-primary me-2"></i>+380981234567</p>
+                                <p class="m-0"><i class="fa fa-phone-alt text-primary me-2"></i>{{$phone}}</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="bg-light d-flex flex-column justify-content-center p-4">
                                 <h5 class="text-uppercase">// Email //</h5>
-                                <p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i>carstudion@gmail.com</p>
+                                <p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i>{{$email}}</p>
                             </div>
                         </div>
                     </div>
@@ -41,29 +41,24 @@
                 <div class="col-md-6">
                     <div class="wow fadeInUp" data-wow-delay="0.2s">
                         <p>Ви можете залишити своє повідомлення тут</p>
-                        <form>
+                        <form method="POST" action="{{route('contact-post')}}">
+                            @csrf
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Ваше Ім'я">
+                                        <input name="name" type="text" class="form-control" id="name" placeholder="Ваше Ім'я">
                                         <label for="name">Ваше Ім'я</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Ваш Email">
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="Ваш Email">
                                         <label for="email">Ваш Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Тема">
-                                        <label for="subject">Тема</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Залиште повідомлення тут" id="message" style="height: 100px"></textarea>
+                                        <textarea name="message" class="form-control" placeholder="Залиште повідомлення тут" id="message" style="height: 100px" required></textarea>
                                         <label for="message">Повідомлення</label>
                                     </div>
                                 </div>

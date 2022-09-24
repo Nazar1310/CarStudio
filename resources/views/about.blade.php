@@ -1,6 +1,6 @@
 @extends('layouts.main')
-@section('title', 'Про Нас')
-@section('meta_description', '')
+@section('title', 'Детальніше про детейлінг студію - CarStudio')
+@section('meta_description', $seoDescription)
 @section('content')
     @include('layouts.page-header',['title'=>'Детальніше про нас','name'=>'Про Нас'])
     <div class="container-xxl py-5">

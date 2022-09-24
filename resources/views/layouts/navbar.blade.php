@@ -12,6 +12,6 @@
             <a href="{{route('services')}}" class="nav-item nav-link {{Route::current()->getName() == 'services'?'active':''}}">Послуги</a>
             <a href="{{route('contact')}}" class="nav-item nav-link {{Route::current()->getName() == 'contact'?'active':''}}">Контакти</a>
         </div>
-        <a href="{{route('advice')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Консультація<i class="fa fa-arrow-right ms-3"></i></a>
+        <a href="{{route('advice')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Записатись<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
 </nav>
