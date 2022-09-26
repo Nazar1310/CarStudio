@@ -22,15 +22,12 @@
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="/img/service-{{$key+1}}.jpg" style="object-fit: cover;" alt="">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="/img/{{$service->slug_url}}/{{$service->prev}}" style="object-fit: cover;" alt="{{$service->slug_url}} preview">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h3 class="mb-3">{{$service->title}}</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
+                                    <p class="mb-4">{{mb_substr($service->desc,0,350)}}...</p>
                                     <a href="{{route('service',$service->slug_url)}}" class="btn btn-primary py-3 px-5 mt-3">Детільніше<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                             </div>

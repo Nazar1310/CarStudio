@@ -7,7 +7,7 @@
             <div class="carousel-inner">
                 @foreach($services as $key=>$service)
                     <div class="carousel-item {{$key == 0?'active':''}}">
-                        <img class="w-100" src="/img/carousel-bg-{{$key+1}}.jpg" alt="Image">
+                        <img class="w-100" src="/img/{{$service->slug_url}}/{{$service->bg}}" alt="{{$service->slug_url}} preview">
                         <div class="carousel-caption d-flex align-items-center">
                             <div class="container">
                                 <div class="row align-items-center justify-content-center justify-content-lg-start">
