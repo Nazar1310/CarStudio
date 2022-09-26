@@ -73,7 +73,7 @@ class IndexController extends Controller
         $service = Service::find($request->service);
         $serviceName = $service?$service->name:'невибрано';
         $message = $request->message;
-        $text = "️Name: $name\nPhone: $email\nService: $serviceName\nMessage: $message";
+        $text = "Ім'я: $name\nТелефон: $email\nПослуга: $serviceName\nДодатковий коментар: $message";
         foreach ($this->ids as $id){
             $data = [
                 'text' => $text,
