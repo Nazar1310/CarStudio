@@ -13,7 +13,7 @@ class IndexController extends Controller
     private $address = 'вул.Кропивницького,1А';
 
     private $token = "5692864738:AAHhSKfQUSppjkAHd3ikhmh9YlI-FkB2UCA";
-    private $ids = ['384118324'];
+    private $ids = ['384118324','2065216585'];
 
     public function index() {
         $phone = $this->phone;
