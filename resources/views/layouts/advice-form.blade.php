@@ -23,7 +23,7 @@
                                 <select name="service" class="form-select border-0" style="height: 55px;" required>
                                     <option selected>Виберіть послугу</option>
                                     @foreach($services as $key=>$service)
-                                        <option value="{{$key}}">{{$service->name}}</option>
+                                        <option value="{{$service->id}}">{{$service->name}}</option>
                                     @endforeach
                                 </select>
                             </div>
