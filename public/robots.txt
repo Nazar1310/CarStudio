@@ -1,7 +1,6 @@
 User-agent: *
 
-Allow: /$
-Allow: /en$
 Disallow: /
+Disallow: /*
 
 Host: https://online-tetris.ru
