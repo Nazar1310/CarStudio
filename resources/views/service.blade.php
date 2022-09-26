@@ -34,7 +34,7 @@
                         <div class="team-item">
                             <div class="position-relative overflow-hidden">
                                 @if(str_contains($item,'mp4'))
-                                    <video class="img-fluid" controls>
+                                    <video class="img-fluid bg-dark" controls="" playsinline="" webkit-playsinline="">
                                         <source src="/img/{{$service->slug_url}}/{{$item}}" type="video/mp4">
                                         Your browser does not support HTML video.
                                     </video>
