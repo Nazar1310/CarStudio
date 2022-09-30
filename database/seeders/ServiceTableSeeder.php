@@ -53,7 +53,7 @@ class ServiceTableSeeder extends Seeder
             'price' => '800-1000',
             'prev' => 'prew.jpeg',
             'bg' => 'bg.jpeg',
-            'media' => '1.jpeg,2.jpeg,3.jpeg,4.jpeg,5.jpeg,6.jpeg,7.jpeg,8.jpeg,9.jpeg,10.jpeg,11.jpeg,12.jpeg,13.jpeg,14.jpeg',
+            'media' => '1.jpeg,2.jpeg,3.jpeg,4.jpeg,5.jpeg,6.jpeg,7.jpeg,8.jpeg,9.jpeg,10.jpeg,11.jpeg,12.jpeg,13.jpeg,14.jpeg,15.jpeg,16.jpeg',
         ]);
 //        Service::updateOrCreate([
 //            'slug_url' => 'himchistka',
@@ -76,7 +76,7 @@ class ServiceTableSeeder extends Seeder
             'price' => 'договірна',
             'prev' => 'prew.jpg',
             'bg' => 'bg.jpg',
-            'media' => '1.png,2.png,3.png,4.png,5.png,6.png,7.png,8.png,9.png',
+            'media' => '1.png,2.png,3.png,4.png,5.png,6.png,7.png,8.png,9.png,10.png,11.png,12.png',
         ]);
     }
 }
