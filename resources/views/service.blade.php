@@ -17,7 +17,7 @@
                 <div class="col-lg-6">
                     <h6 class="text-primary text-uppercase">// Детальніше про послугу //</h6>
                     <h2 class="mb-4">{{$service->title}}</h2>
-                    <p class="mb-4">{{$service->desc}}</p>
+                    <p class="mb-4">{!!$service->desc!!}</p>
                 </div>
             </div>
         </div>

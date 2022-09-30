@@ -27,7 +27,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <h3 class="mb-3">{{$service->title}}</h3>
-                                    <p class="mb-4">{{mb_substr($service->desc,0,350)}}...</p>
+                                    <p class="mb-4">{!!mb_substr($service->desc,0,350)!!}...</p>
                                     <a href="{{route('service',$service->slug_url)}}" class="btn btn-primary py-3 px-5 mt-3">Детільніше<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                             </div>
