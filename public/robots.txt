@@ -1,6 +1,6 @@
 User-agent: *
 
-Disallow: /
-Disallow: /*
+Disallow: /img
+Disallow: /js
 
-Host: https://online-tetris.ru
+Host: https://carstudio.life
