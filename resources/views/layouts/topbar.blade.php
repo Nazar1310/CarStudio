@@ -18,8 +18,8 @@
                 @endforeach
             </div>
             <div class="h-100 d-inline-flex align-items-center">
-                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.facebook.com/car.studio.renaissance" target="_blank"><i class="fab fa-facebook-f"></i></a>
+{{--                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-youtube"></i></a>--}}
                 <a class="btn btn-sm-square bg-white text-primary me-0" href="https://www.instagram.com/car_studio_renaissance" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
