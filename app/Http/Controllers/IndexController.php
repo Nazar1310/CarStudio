@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Models\Customer;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
@@ -69,11 +70,16 @@ class IndexController extends Controller
     }
     public function advicePost(Request $request) {
         $name = $request->name;
-        $email = $request->phone;
+        $phone = $request->phone;
         $service = Service::find($request->service);
         $serviceName = $service?$service->name:'невибрано';
+        $customer = new Customer();
+        $customer->name = $name;
+        $customer->phone = $phone;
+        $customer->service_name = $serviceName;
+        $customer->save();
         $message = $request->message;
-        $text = "Ім'я: $name\nТелефон: $email\nПослуга: $serviceName\nДодатковий коментар: $message";
+        $text = "Ім'я: $name\nТелефон: $phone\nПослуга: $serviceName\nДодатковий коментар: $message";
         foreach ($this->ids as $id){
             $data = [
                 'text' => $text,
