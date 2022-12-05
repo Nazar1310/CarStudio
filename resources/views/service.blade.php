@@ -10,7 +10,7 @@
                     <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
                         <img class="position-absolute img-fluid w-100 h-100" src="/img/{{$service->slug_url}}/{{$service->prev}}" style="object-fit: cover;" alt="{{$service->slug_url}} preview">
                         <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5" style="background: rgba(0, 0, 0, .08);">
-                            <h2 class="display-4 text-white mb-0">{{$service->price}} <span class="fs-4">$</span></h2>
+                            <h2 class="display-4 text-white mb-0">{{$service->price}}</h2>
                         </div>
                     </div>
                 </div>

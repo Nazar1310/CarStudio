@@ -12,14 +12,6 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{Request::url()}}">
     <meta property="og:title" content="@yield('title')">
-    @section('metaDublinCore')
-        <meta name="DC.Title" content="@yield('title')">
-        <meta name="DC.Creator" content="CarStudio">
-        <meta name="DC.Subject" content="@yield('title')">
-        <meta name="DC.Description" content="@yield('meta_description')">
-        <meta name="DC.Publisher" content="{{config('app.name')}}">
-        <meta name="DC.Language" content="{{ app()->getLocale() }}">
-    @show
     <link rel="canonical" href="{{Request::url()}}"/>
     <link href="/img/favicon.ico" rel="icon">
     <meta name="msapplication-TileColor" content="#da532c">

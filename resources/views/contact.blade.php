@@ -21,7 +21,9 @@
                         <div class="col-md-4">
                             <div class="bg-light d-flex flex-column justify-content-center p-4">
                                 <h5 class="text-uppercase">// Телефон //</h5>
-                                <p class="m-0"><i class="fa fa-phone-alt text-primary me-2"></i>{{$phone}}</p>
+                                @foreach($phones as $phone)
+                                    <p class="m-0"><i class="fa fa-phone-alt text-primary me-2"></i>{{$phone}}</p>
+                                @endforeach
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -34,7 +36,7 @@
                 </div>
                 <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
                     <iframe class="position-relative rounded w-100 h-100"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d532.1509364805529!2d24.720395158037917!3d48.9417124790417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c1a4061a900d%3A0xac5d1bf549d67c50!2z0YPQuy4g0JrRgNC-0L_QuNCy0L3QuNGG0LrQvtCz0L4sIDHQkCwg0JjQstCw0L3Qvi3QpNGA0LDQvdC60L7QstGB0LosINCY0LLQsNC90L4t0KTRgNCw0L3QutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNzYwMDA!5e0!3m2!1sru!2sua!4v1670253895612!5m2!1sru!2sua"
                             frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
                             tabindex="0"></iframe>
                 </div>

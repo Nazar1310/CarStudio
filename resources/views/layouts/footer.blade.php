@@ -4,7 +4,9 @@
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Адреса</h4>
                 <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>{{$address}}</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>{{$phone}}</p>
+                @foreach($phones as $phone)
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>{{$phone}}</p>
+                @endforeach
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i>{{$email}}</p>
                 <div class="d-flex pt-2">
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -26,7 +28,7 @@
                 @endforeach
             </div>
             <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Newsletter</h4>
+                <h4 class="text-light mb-4">Розсилка</h4>
                 <p>Будьте першими, хто дізнається про новинки, переваги та акції.</p>
                 <form method="POST" action="{{route('newsletter')}}" class="position-relative mx-auto" style="max-width: 400px;">
                     @csrf
@@ -45,9 +47,7 @@
                 <div class="col-md-6 text-center text-md-end">
                     <div class="footer-menu">
                         <a href="{{route('index')}}">Головна</a>
-                        <a href="">Cookies</a>
                         <a href="{{route('contact')}}">Допомога</a>
-                        <a href="">FQAs</a>
                     </div>
                 </div>
             </div>

@@ -8,7 +8,9 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="bg-primary d-flex flex-column justify-content-center text-center h-100 p-4">
-                    <h3 class="text-white mb-4"><i class="fa fa-phone-alt me-3"></i>{{$phone}}</h3>
+                    @foreach($phones as $phone)
+                        <h3 class="text-white mb-4"><i class="fa fa-phone-alt me-3"></i>{{$phone}}</h3>
+                    @endforeach
                     <a href="{{route('contact')}}" class="btn btn-secondary py-3 px-5">Контакти<i class="fa fa-arrow-right ms-3"></i></a>
                 </div>
             </div>

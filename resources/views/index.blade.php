@@ -67,6 +67,6 @@
     </div>
     @include('layouts.service-list')
     @include('layouts.advice-form',['bg'=>true])
-    @include('layouts.reviews')
+{{--    @include('layouts.reviews')--}}
     @include('layouts.phone-number')
 @stop
