@@ -65,7 +65,7 @@ class IndexController extends Controller
             abort(404);
         }
         $services = Service::get();
-        $seoDescription = $this->getSeoDesc($services);
+        $seoDescription = "Надаємо широкий спектр послуг: $service->seo_desc";
         return view('service',compact('services','service','phones','email','address','seoDescription'));
     }
     public function advicePost(Request $request) {

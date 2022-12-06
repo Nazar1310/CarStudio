@@ -4,3 +4,5 @@ Disallow: /img
 Disallow: /js
 
 Host: https://carstudio.life
+
+Sitemap: https://carstudio.life/sitemap.xml
