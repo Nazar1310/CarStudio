@@ -16,7 +16,7 @@ class ServiceTableSeeder extends Seeder
     {
         Service::updateOrCreate([
             'slug_url' => 'himchistka',
-            'seo_title' => 'Хімчистка салону авто від детейлінг студії в Івано-Франківську - CarStudio',
+            'seo_title' => 'Хімчистка салону авто від детейлінг студії у Івано-Франківську - CarStudio',
             'seo_desc' => 'детейлінг хімчистка салону',
             'name' => 'Хімчистка',
             'title' => 'Хімчистка салону',
@@ -28,7 +28,7 @@ class ServiceTableSeeder extends Seeder
         ]);
         Service::updateOrCreate([
             'slug_url' => 'vmatini',
-            'seo_title' => 'Професійне видалення вмятин без фарбування від детейлінг студії в Івано-Франківську - CarStudio',
+            'seo_title' => 'Професійне видалення вмятин без фарбування від детейлінг студії у Івано-Франківську - CarStudio',
             'seo_desc' => 'професійне видалення та ремонт вмятин без фарбування',
             'name' => "Вм'ятини",
             'title' => "Професійне видалення вмятин без фарбування",
@@ -40,7 +40,7 @@ class ServiceTableSeeder extends Seeder
         ]);
         Service::updateOrCreate([
             'slug_url' => 'poliruvanna',
-            'seo_title' => 'Полірування авто від детейлінг студії в Івано-Франківську - CarStudio',
+            'seo_title' => 'Полірування авто від детейлінг студії у Івано-Франківську - CarStudio',
             'seo_desc' => 'детейлінг полірування, захисне покриття, кераміка, віск, детейлінг мийка',
             'name' => 'Полірування',
             'title' => 'Полірування авто',
@@ -70,7 +70,7 @@ class ServiceTableSeeder extends Seeder
         ]);
         Service::updateOrCreate([
             'slug_url' => 'pereshivka',
-            'seo_title' => 'Пошиття, перетяжка, ремонт та фарбування шкіряних виробів в детейлінг студії в Івано-Франківську - CarStudio',
+            'seo_title' => 'Пошиття, перетяжка, ремонт та фарбування шкіряних виробів в детейлінг студії у Івано-Франківську - CarStudio',
             'seo_desc' => 'тюнінг ательє, перешив та реставрація - салону, рулів, дверних карт, торпедо, стелі',
             'name' => 'Авто ательє',
             'title' => 'Авто ательє',
