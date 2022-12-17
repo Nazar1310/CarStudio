@@ -5,7 +5,7 @@
                 <h4 class="text-light mb-4">Адреса</h4>
                 <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>{{$address}}</p>
                 @foreach($phones as $phone)
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>{{$phone}}</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a style="color: white" href="tel:{{$phone}}">{{$phone}}</a></p>
                 @endforeach
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i>{{$email}}</p>
                 <div class="d-flex pt-2">
@@ -46,6 +46,7 @@
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <div class="footer-menu">
+                        <a href="{{route('contact')}}">Де нас знайти?</a>
                         <a href="{{route('index')}}">Головна</a>
                         <a href="{{route('contact')}}">Допомога</a>
                     </div>

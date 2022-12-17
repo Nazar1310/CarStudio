@@ -169,7 +169,7 @@
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -380,4 +380,11 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+.advice-button {
+    position: fixed;
+    bottom: 45px;
+    right: 25px;
+    z-index: 100;
+    padding: 11px;
 }

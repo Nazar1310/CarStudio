@@ -4,5 +4,6 @@
 @section('content')
     @include('layouts.page-header',['title'=>'Наші Послуги','name'=>'Послуги'])
     @include('layouts.service-list')
+    @include('layouts.advice-form',['bg'=>true])
     @include('layouts.phone-number')
 @stop

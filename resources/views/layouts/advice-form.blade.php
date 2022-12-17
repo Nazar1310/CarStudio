@@ -1,4 +1,4 @@
-<div class="container-fluid {{$bg?'bg-secondary booking':''}} my-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container-fluid {{$bg?'bg-secondary booking':''}} my-5 wow fadeInUp" data-wow-delay="0.1s" id="advice-form">
     <div class="container">
         <div class="row gx-5">
             <div class="col-lg-6 py-5">
@@ -19,14 +19,18 @@
                             <div class="col-12 col-sm-6">
                                 <input name="phone" type="text" class="form-control border-0" placeholder="Телефон" style="height: 55px;" required>
                             </div>
-                            <div class="col-12">
-                                <select name="service" class="form-select border-0" style="height: 55px;" required>
-                                    <option selected>Виберіть послугу</option>
-                                    @foreach($services as $key=>$service)
-                                        <option value="{{$service->id}}">{{$service->name}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
+                            @if(isset($service))
+                                <input name="service" type="hidden" value="{{$service->id}}">
+                            @else
+                                <div class="col-12">
+                                    <select name="service" class="form-select border-0" style="height: 55px;" required>
+                                        <option selected>Виберіть послугу</option>
+                                        @foreach($services as $key=>$service)
+                                            <option value="{{$service->id}}">{{$service->name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            @endif
                             <div class="col-12">
                                 <textarea name="message" class="form-control border-0" placeholder="Додатковий коментар"></textarea>
                             </div>
@@ -40,3 +44,4 @@
         </div>
     </div>
 </div>
+<a class="advice-button btn btn-primary px-4">Записатись</a>

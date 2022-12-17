@@ -22,7 +22,7 @@
                             <div class="bg-light d-flex flex-column justify-content-center p-4">
                                 <h5 class="text-uppercase">// Телефон //</h5>
                                 @foreach($phones as $phone)
-                                    <p class="m-0"><i class="fa fa-phone-alt text-primary me-2"></i>{{$phone}}</p>
+                                    <p class="m-0"><i class="fa fa-phone-alt text-primary me-2"></i><a style="color: #596277" href="tel:{{$phone}}">{{$phone}}</a></p>
                                 @endforeach
                             </div>
                         </div>

@@ -14,7 +14,7 @@
             <div class="h-100 d-inline-flex align-items-center py-3 me-4">
                 <small class="fa fa-phone-alt text-primary me-2"></small>
                 @foreach($phones as $phone)
-                    <small>{{$phone}}</small>
+                    <small><a style="color: #596277" href="tel:{{$phone}}">{{$phone}}</a></small>
                 @endforeach
             </div>
             <div class="h-100 d-inline-flex align-items-center">

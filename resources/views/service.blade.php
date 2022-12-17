@@ -48,5 +48,6 @@
             </div>
         </div>
     </div>
+    @include('layouts.advice-form',['bg'=>true,'service'=>$service])
     @include('layouts.phone-number')
 @stop
